@@ -9,7 +9,7 @@ In the current landscape, there's a lack of non-commercial yet efficient PDF tra
 
 # Features
 - [ ]  Translation of English PDF books to Chinese using LLMs.
-- [ ]  Support for both ~[OpenAI](https://platform.openai.com/docs/models)~ models.
+- [ ]  Support for [OpenAI](https://platform.openai.com/docs/models) models.
 - [ ]  Flexible configuration through a YAML file or command-line arguments.
 - [ ]  Timeouts and error handling for robust translation operations.
 - [ ]  Modular and object-oriented design for easy customization and extension.
