@@ -1,20 +1,23 @@
 测试数据
-这个数据集包含了 OpenAI 的 AI 语言模型 ChatGPT 提供的两个测试样本。
-这些样本包括一个 Markdown 表格和一个英文文本段落，可以用来测试一个支持文本和表格格式的英译中翻译软件。
+这个数据集包含两个由OpenAI的AI语言模型ChatGPT提供的测试样本。
+这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试一个支持文本和表格格式的英译中翻译软件。
 文本测试
-快速的棕色狐狸跳过懒狗。这个句子包含了英文字母表中的每一个字母。句子是用来测试字体、键盘以及其他文本相关工具的。除了英语，还有许多其他语言的句子。由于语言的独特特征，一些句子更难构造。
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
 表格测试
 
 | 水果 | 颜色 | 价格（美元） |
 | --- | --- | --- |
-| Apple | 红色 | 1.20 |
-| Banana | 黄色 | 0.50 |
-| Orange | 橙色 | 0.80 |
-| Strawberry | 红色 | 2.50 |
-| Blueberry | 蓝色 | 3.00 |
-| Kiwi | 绿色 | 1.00 |
-| Mango | 橙色 | 1.50 |
-| Grape | 紫色 | 2.00 |
+| 苹果 | 红色 | 1.20 |
+| 香蕉 | 黄色 | 0.50 |
+| 橙子 | 橙色 | 0.80 |
+| 草莓 | 红色 | 2.50 |
+| 蓝莓 | 蓝色 | 3.00 |
+| 奇异果 | 绿色 | 1.00 |
+| 芒果 | 橙色 | 1.50 |
+| 葡萄 | 紫色 | 2.00 |
 
 ---
 
