@@ -8,3 +8,5 @@ reportlab
 pandas
 loguru
 gradio
+zhipuai
+google-generativeai

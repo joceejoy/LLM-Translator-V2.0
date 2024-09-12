@@ -1,23 +1,33 @@
+import os
 import requests
 import simplejson
 
 from model import Model
+from zhipuai import ZhipuAI
 
 class GLMModel(Model):
-    def __init__(self, model_url: str, timeout: int):
-        self.model_url = model_url
-        self.timeout = timeout
+    def __init__(self, model: str, api_key: str):
+        self.model = model
+        self.client = ZhipuAI(api_key=os.getenv("GLM_API_KEY"))
 
     def make_request(self, prompt):
         try:
-            payload = {
-                "prompt": prompt,
-                "history": []
-            }
-            response = requests.post(self.model_url, json=payload, timeout=self.timeout)
-            response.raise_for_status()
-            response_dict = response.json()
-            translation = response_dict["response"]
+            if self.model == 'glm-4-flash':
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    messages=[
+                        {"role": "user", "content": prompt}
+                    ]
+                )
+                translation = response.choices[0].message.content.strip()
+            else:
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    prompt=prompt,
+                    max_tokens=150,
+                    temperature=0
+                )
+                translation = response.choices[0].message.content.strip()
             return translation, True
         except requests.exceptions.RequestException as e:
             raise Exception(f"请求异常：{e}")
