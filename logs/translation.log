@@ -1,379 +1,4 @@
-2024-09-02 23:49:12.645 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-02 23:49:12.650 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-02 23:49:12.716 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-02 23:49:16.382 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
-这个数据集包含了由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
-这些样本包括一个markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英译中翻译软件。
-文本测试
-快速的棕色狐狸跳过懒惰的狗。 这个句子包含了英文字母表中的每一个字母。 句子在测试字体、键盘和其他文本相关工具时经常被使用。 除了英语，很多其他语言中也有句子。 由于语言的独特特性，有些句子更难构造。
-表格测试
-2024-09-02 23:49:16.386 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-02 23:49:18.576 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果    颜色     价格（美元）
-苹果    红色     1.20
-香蕉    黄色     0.50
-橙子    橙色     0.80
-草莓    红色     2.50
-蓝莓    蓝色     3.00
-奇异果  绿色     1.00
-芒果    橙色     1.50
-葡萄    紫色     2.00
-2024-09-02 23:49:18.577 | DEBUG    | book.content:set_translation:49 - 水果    颜色     价格（美元）
-苹果    红色     1.20
-香蕉    黄色     0.50
-橙子    橙色     0.80
-草莓    红色     2.50
-蓝莓    蓝色     3.00
-奇异果  绿色     1.00
-芒果    橙色     1.50
-葡萄    紫色     2.00
-2024-09-02 23:49:18.579 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['奇异果', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
-2024-09-02 23:49:18.581 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格（美元）
-0   苹果  红色   1.20
-1   香蕉  黄色   0.50
-2   橙子  橙色   0.80
-3   草莓  红色   2.50
-4   蓝莓  蓝色   3.00
-5  奇异果  绿色   1.00
-6   芒果  橙色   1.50
-7   葡萄  紫色   2.00
-2024-09-02 23:49:18.587 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
-2024-09-02 23:49:18.587 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
-2024-09-02 23:49:18.588 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
-2024-09-02 23:50:37.884 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-02 23:50:37.901 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-02 23:50:37.962 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-02 23:50:40.869 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
-这个数据集包含了 OpenAI 的 AI 语言模型 ChatGPT 提供的两个测试样本。
-这些样本包括一个 Markdown 表格和一个英文文本段落，可以用来测试一个支持文本和表格格式的英译中翻译软件。
-文本测试
-快速的棕色狐狸跳过懒狗。这个句子包含了英文字母表中的每一个字母。句子是用来测试字体、键盘以及其他文本相关工具的。除了英语，还有许多其他语言的句子。由于语言的独特特征，一些句子更难构造。
-表格测试
-2024-09-02 23:50:40.874 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-02 23:50:42.767 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果    颜色    价格（美元） 
-Apple    红色    1.20 
-Banana   黄色    0.50 
-Orange   橙色    0.80 
-Strawberry   红色    2.50 
-Blueberry   蓝色    3.00 
-Kiwi    绿色    1.00 
-Mango    橙色    1.50 
-Grape    紫色    2.00
-2024-09-02 23:50:42.768 | DEBUG    | book.content:set_translation:49 - 水果    颜色    价格（美元） 
-Apple    红色    1.20 
-Banana   黄色    0.50 
-Orange   橙色    0.80 
-Strawberry   红色    2.50 
-Blueberry   蓝色    3.00 
-Kiwi    绿色    1.00 
-Mango    橙色    1.50 
-Grape    紫色    2.00
-2024-09-02 23:50:42.769 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['Apple', '红色', '1.20'], ['Banana', '黄色', '0.50'], ['Orange', '橙色', '0.80'], ['Strawberry', '红色', '2.50'], ['Blueberry', '蓝色', '3.00'], ['Kiwi', '绿色', '1.00'], ['Mango', '橙色', '1.50'], ['Grape', '紫色', '2.00']]
-2024-09-02 23:50:42.772 | DEBUG    | book.content:set_translation:55 -            水果  颜色 价格（美元）
-0       Apple  红色   1.20
-1      Banana  黄色   0.50
-2      Orange  橙色   0.80
-3  Strawberry  红色   2.50
-4   Blueberry  蓝色   3.00
-5        Kiwi  绿色   1.00
-6       Mango  橙色   1.50
-7       Grape  紫色   2.00
-2024-09-02 23:50:42.794 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
-2024-09-02 23:50:42.795 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
-2024-09-02 23:50:42.797 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
-2024-09-03 14:17:53.090 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-03 14:17:53.095 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-03 14:17:53.150 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-03 14:17:56.689 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
-这个数据集包含两个由OpenAI的AI语言模型ChatGPT提供的测试样本。
-这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试一个支持文本和表格格式的英译中翻译软件。
-文本测试
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-表格测试
-2024-09-03 14:17:56.695 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-03 14:17:58.411 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果 颜色 价格（美元）
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-奇异果 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-03 14:17:58.412 | DEBUG    | book.content:set_translation:49 - 水果 颜色 价格（美元）
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-奇异果 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-03 14:17:58.412 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['奇异果', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
-2024-09-03 14:17:58.414 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格（美元）
-0   苹果  红色   1.20
-1   香蕉  黄色   0.50
-2   橙子  橙色   0.80
-3   草莓  红色   2.50
-4   蓝莓  蓝色   3.00
-5  奇异果  绿色   1.00
-6   芒果  橙色   1.50
-7   葡萄  紫色   2.00
-2024-09-03 14:17:58.425 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
-2024-09-03 14:17:58.425 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
-2024-09-03 14:17:58.427 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
-2024-09-03 17:17:15.559 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-03 17:17:15.574 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-03 17:17:15.625 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-03 17:17:19.628 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
-这个数据集包含了由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
-这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英译中翻译软件。
-文本测试
-快速的棕色狐狸跳过懒狗。这个全字母句包含了英语字母表中的每个字母至少一次。全字母句经常用来测试字体、键盘和其他与文本相关的工具。除了英文，许多其他语言也有全字母句。由于语言的独特特点，一些全字母句更难构造。
-表格测试
-2024-09-03 17:17:19.635 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-03 17:17:21.553 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果 颜色 价格（美元）
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-猕猴桃 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-03 17:17:21.554 | DEBUG    | book.content:set_translation:49 - 水果 颜色 价格（美元）
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-猕猴桃 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-03 17:17:21.554 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
-2024-09-03 17:17:21.557 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格（美元）
-0   苹果  红色   1.20
-1   香蕉  黄色   0.50
-2   橙子  橙色   0.80
-3   草莓  红色   2.50
-4   蓝莓  蓝色   3.00
-5  猕猴桃  绿色   1.00
-6   芒果  橙色   1.50
-7   葡萄  紫色   2.00
-2024-09-03 17:17:21.572 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: tests/test.pdf
-2024-09-03 17:17:21.573 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: tests/test_translated.pdf
-2024-09-03 17:17:21.826 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: tests/test_translated.pdf
-2024-09-11 22:34:08.853 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-11 22:34:08.867 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-11 22:34:08.937 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-11 22:34:14.580 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
-这个数据集包含了两个由OpenAI的AI语言模型ChatGPT提供的测试样本。
-这些样本包括一个Markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英译中翻译软件。
-文本测试
-快速的棕色狐狸跳过懒狗。这个句子包含了英语字母表中的每一个字母。句子经常被用来测试字体、键盘和其他文本相关的工具。除了英语，其他许多语言中也有句子。一些句子由于语言的独特特性而更难构造。
-表格测试
-2024-09-11 22:34:14.584 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-11 22:34:16.927 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果 颜色 价格(美元)
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-猕猴桃 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-11 22:34:16.928 | DEBUG    | book.content:set_translation:49 - 水果 颜色 价格(美元)
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-猕猴桃 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-11 22:34:16.928 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格(美元)'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
-2024-09-11 22:34:16.932 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格(美元)
-0   苹果  红色   1.20
-1   香蕉  黄色   0.50
-2   橙子  橙色   0.80
-3   草莓  红色   2.50
-4   蓝莓  蓝色   3.00
-5  猕猴桃  绿色   1.00
-6   芒果  橙色   1.50
-7   葡萄  紫色   2.00
-2024-09-11 22:34:16.957 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: tests/test.pdf
-2024-09-11 22:34:16.958 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: tests/test_translated.md
-2024-09-11 22:34:16.959 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: tests/test_translated.md
-2024-09-11 22:35:08.199 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-11 22:35:08.249 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-11 22:35:08.300 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Test Data
-This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
-These samples include a markdown table and an English text passage, which can be used to test an
-English-to-Chinese translation software supporting both text and table formats.
-Text testing
-The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
-alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
-tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
-difficult to construct due to the unique characteristics of the language.
-Table Testing
-2024-09-11 22:35:14.998 | INFO     | translator.pdf_translator:translate_pdf:21 - 测试数据
-这个数据集包含了由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
-这些样本包括一个Markdown表格和一段英文文本，可以用来测试支持文本和表格格式的英译中翻译软件。
-文本测试
-快速的棕色狐狸跳过懒惰的狗。这个全字母句包含了英语字母表中的每个字母至少一次。全字母句通常用来测试字体、键盘和其他与文本相关的工具。除了英语，还有许多其他语言中的全字母句。由于语言的独特特征，有些全字母句更难构造。
-表格测试
-2024-09-11 22:35:15.004 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文，以空格和换行符表示表格：
-[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
-2024-09-11 22:35:17.954 | INFO     | translator.pdf_translator:translate_pdf:21 - 水果 颜色 价格（美元）
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-猕猴桃 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-11 22:35:17.955 | DEBUG    | book.content:set_translation:49 - 水果 颜色 价格（美元）
-苹果 红色 1.20
-香蕉 黄色 0.50
-橙子 橙色 0.80
-草莓 红色 2.50
-蓝莓 蓝色 3.00
-猕猴桃 绿色 1.00
-芒果 橙色 1.50
-葡萄 紫色 2.00
-2024-09-11 22:35:17.956 | DEBUG    | book.content:set_translation:52 - [['水果', '颜色', '价格（美元）'], ['苹果', '红色', '1.20'], ['香蕉', '黄色', '0.50'], ['橙子', '橙色', '0.80'], ['草莓', '红色', '2.50'], ['蓝莓', '蓝色', '3.00'], ['猕猴桃', '绿色', '1.00'], ['芒果', '橙色', '1.50'], ['葡萄', '紫色', '2.00']]
-2024-09-11 22:35:17.959 | DEBUG    | book.content:set_translation:55 -     水果  颜色 价格（美元）
-0   苹果  红色   1.20
-1   香蕉  黄色   0.50
-2   橙子  橙色   0.80
-3   草莓  红色   2.50
-4   蓝莓  蓝色   3.00
-5  猕猴桃  绿色   1.00
-6   芒果  橙色   1.50
-7   葡萄  紫色   2.00
-2024-09-11 22:35:17.979 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: tests/test.pdf
-2024-09-11 22:35:17.979 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: tests/test_translated.pdf
-2024-09-11 22:35:18.151 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: tests/test_translated.pdf
-2024-09-12 00:55:27.587 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+2024-09-12 13:14:14.890 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
  Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
@@ -421,7 +46,7 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 00:55:27.591 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+2024-09-12 13:14:14.892 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
 linkedin.com/in/jocelynxiaxiao
@@ -468,54 +93,291 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 00:55:45.269 | INFO     | translator.pdf_translator:translate_pdf:21 - 夏晓 +852-6365-0712
+2024-09-12 13:14:27.742 | INFO     | translator.pdf_translator:translate_pdf:21 - 肖霞 +852-6365-0712
 jocelynxiao23@gmail.com
 香港特别行政区
 linkedin.com/in/jocelynxiaxiao
 简介
-✓资深的云应用架构师，在云客户工程和专业服务行业有丰富的工作经验。精通亚马逊云服务（AWS）、应用开发、解决方案架构设计、DevOps/编排和流程、移动化和迁移。
-✓在美洲、欧洲和亚太区域的项目和客户中拥有超过5年的经验。
-✓热衷于帮助合作伙伴和客户取得成功。
-教育背景
-纽约大学 库兰数学学院 纽约，NY
-计算机科学和数学联合专业学士学位 2018年毕业
+✓ 有丰富的云应用架构师经验，曾在云客户工程和专业服务行业工作。精通亚马逊云服务（AWS）、应用开发、解决方案架构设计、DevOps/编排和管道、移动化和迁移。
+✓ 在美洲、欧洲中东非洲和亚太地区拥有与项目和客户合作的5年以上经验。
+✓ 热衷于帮助伙伴和客户实现成功。
+教育
+纽约大学库兰数学研究所 纽约，纽约州
+计算机科学和数学联合专业学士学位 2018年5月毕业
+技能
+编程：Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
+框架/工具：Git、Jenkins、Docker、CI/CD、微服务、JUnit、Angular、ReactJS
+AWS技能：Code Commit | Build | Deploy | Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognito等
+方法：EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
+语言：英语、普通话、粤语
+工作经验
+亚马逊云服务（AWS）纽约 | 金融市场区域 | 香港
+云应用架构师 2022年4月至今（3个多月）
+应用开发顾问 2020年10月至2022年4月（1年7个月）
+助理云开发人员 2019年3月至2020年10月（1年8个月）
+• 在AWS平台上使用各种AWS服务构建高度可伸缩的云原生应用
+• 领导技术设计和讨论，帮助企业加快对新技术和最佳实践的采用速度
+• 提供建议和分享AWS最佳实践，帮助客户和伙伴取得成功
+• 与商务开发和解决方案架构团队合作，为全球客户提供应用架构专业知识
+巴克莱投资银行 纽约，纽约州
+软件工程师 2018年7月至2019年3月（9个月）
+• 建立并维护巴克莱卡应用程序仪表板，在AppDynamics中创建模板和功能
+• 改善巴克莱信用卡和支付平台基础架构的监控和自动化
+技术暑期分析师 2017年6月至2017年8月（3个月）
+• 在Tableau中构建了CCAR市场压力报告的部分（14Q），使用了Day2 Cube基础设施
+• 推断风险数据/指数，开发风险报告并实现数据可视化
+卡内基梅隆大学 匹兹堡，宾夕法尼亚州
+研究助理 2016年5月至2019年8月（4个月）
+• 实现了BDD数据结构，并将运行时间效率提高了60%（Java）
+• 优化算法，将计算和运营成本降低35%
+• 对Java性能在BDD上进行评估，并进行了统计严谨的数据分析（Matlab，统计学）
+• 对Java性能进行差异测试；为研究报告收集和分析数据
+项目
+安全的云原生文件交换（SFXC） 2021年8月至2022年4月
+• 在AWS上构建一个云原生、无服务器、高可用的托管文件传输（MFT）应用程序
+• 为SFXC应用程序的5个实体实施、测试和部署REST API
+• 提供了Lambda函数、CI/CD管道、集成测试，应用程序的可用性、耐久性、可靠性、可扩展性和自动化均达到了95%以上。
+2024-09-12 13:14:27.743 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
+2024-09-12 13:14:27.744 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 13:14:28.260 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 16:18:39.511 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 16:18:39.514 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 16:19:20.609 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 16:19:20.612 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 16:19:33.850 | INFO     | translator.pdf_translator:translate_pdf:21 - 肖晓 +852-6365-0712
+jocelynxiao23@gmail.com
+香港特别行政区
+linkedin.com/in/jocelynxiaxiao
+概要
+✓有着在云客户工程和专业服务行业工作经验的云应用架构师。擅长亚马逊云服务(AWS)、应用开发、解决方案架构设计、DevOps/编排和流水线、移动化和迁移。
+✓在AMER、EMEA和APJC地区拥有5年以上的项目和客户经验。
+✓热衷于帮助合作伙伴和客户实现成功。
+教育
+纽约大学，库朗数学研究院 纽约，NY
+计算机科学与数学联合专业学士学位 2018年毕业
 技能
 编程语言：Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
 框架/工具：Git、Jenkins、Docker、CI/CD、微服务、JUnit、Angular、ReactJS
-AWS技能：Code Commit | Build | Deploy | Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognito等
+AWS技能：Code Commit | Build | Deploy | Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognito等。
 方法论：EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
 语言：英语、普通话、粤语
 工作经验
-亚马逊云服务（AWS） 纽约 | GCR | 香港
-云应用架构师 2022年4月 - 至今（3个月）
-应用开发顾问 2020年10月 - 2022年4月（1年7个月）
-助理云开发工程师 2019年3月-2020年10月（1年8个月）
-• 在AWS平台上使用各种AWS服务构建高度可扩展的云原生应用程序
-• 主导技术设计和讨论，帮助企业加快采用新技术和最佳实践
+亚马逊云服务（AWS）纽约 | GCR | 香港
+云应用架构师 2022年4月至今（3个月+）
+应用开发顾问 2020年10月-2022年4月（1年7个月）
+助理云开发人员 2019年3月-2020年10月（1年8个月）
+• 在AWS平台上使用各种AWS服务构建高可扩展的云原生应用程序
+• 主导技术设计和讨论，帮助企业加快新技术和最佳实践的采用速度
 • 提供并分享AWS最佳实践，帮助客户和合作伙伴取得成功
-• 与商务拓展及解决方案架构团队合作，为全球客户提供应用架构专业知识
+• 与业务发展和解决方案架构团队合作，为全球客户提供应用架构专业知识
 巴克莱投资银行 纽约，NY
-软件工程师 2018年7月 - 2019年3月（9个月）
-• 构建和维护Barclaycard应用程序仪表板、模板和功能，使用AppDynamics
-• 提高了对Barclays卡片和支付平台基础设施的监控和自动化
-技术暑期分析师 2017年6月 - 2017年8月（3个月）
-• 在Tableau中构建CCAR市场压力报告（14Q）的部分，使用Day2 Cube基础架构
-• 推导风险数据/指数、开发风险报告和实现数据可视化
+软件工程师 2018年7月-2019年3月（9个月）
+• 构建和维护巴克莱信用卡应用程序仪表板、模板和功能，使用AppDynamics
+• 提升巴克莱卡片和支付平台基础设施的监控和自动化
+技术暑期分析员 2017年6月-8月（3个月）
+• 在Tableau中构建CCAR市场压力报告（14Q）的部分，使用Day2 Cube基础设施
+• 推断风险数据/指数，开发风险报告并实现数据可视化
 卡内基梅隆大学 匹兹堡，PA
-研究助理 2016年5月 - 2019年8月（4个月）
-• 实现BDD数据结构，通过Java将运行时间效率提高了60%
-• 优化算法，将计算和运营成本降低了35%
-• 对BDD上的Java性能进行评估，并进行统计学严谨的数据分析（Matlab, 统计学）
-• 对Java性能进行差异测试；收集并分析用于研究报告的数据
+研究助理 2016年5月-2019年8月（4个月）
+• 实现BDD数据结构，将运行时间效率提高60% (Java)
+• 优化算法，将计算成本和运行成本降低35%
+• 评估Java在BDD上的性能，进行统计严谨的数据分析（Matlab、统计学）
+• 对Java性能进行差异测试；收集并分析研究报告数据
 项目
-安全文件交换云原生（SFXC） 2021年8月 - 2022年4月
-• 在AWS上构建一个云原生、无服务器、高可用的托管文件传输（MFT）应用程序
-• 实施、测试并部署SFXC应用程序的5个实体的REST API
-• 提供Lambda函数、CI/CD流水线和集成测试，应用程序实现了>95%的正常运行时间率、耐久性、可靠性、可扩展性和自动化。
-2024-09-12 00:55:45.270 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
-2024-09-12 00:55:45.271 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated
-2024-09-12 00:55:45.441 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated
-2024-09-12 01:01:35.010 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+安全文件交换云原生(SFXC) 2021年8月-2022年4月
+• 在AWS上构建了一个云原生、无服务器、高可用的托管文件传输(MFT)应用程序
+• 为SFXC应用的5个实体实现、测试和部署REST API
+• 提供了Lambda函数、CI/CD流水线和集成功能的整合测试，应用程序实现了95%以上的在线率、耐久性、可靠性、扩展性和自动化
+2024-09-12 16:19:33.851 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
+2024-09-12 16:19:33.852 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 16:19:33.975 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 16:23:32.421 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
  Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
@@ -563,7 +425,7 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 01:01:35.013 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+2024-09-12 16:23:32.424 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
 linkedin.com/in/jocelynxiaxiao
@@ -610,53 +472,7 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 01:01:52.368 | INFO     | translator.pdf_translator:translate_pdf:21 - 肖晓 +852-6365-0712
-jocelynxiao23@gmail.com
-香港特别行政区
-linkedin.com/in/jocelynxiaxiao
-简介
-✓有丰富的云应用架构师经验，拥有在云客户工程和专业服务行业工作的经验。熟练掌握亚马逊云服务(AWS)、应用开发、解决方案架构设计、DevOps/编排和流水线、搬迁和移动等技能。
-✓在美洲、欧洲、亚太地区拥有5年以上的项目和客户经验。
-✓热衷于帮助伙伴和客户实现成功。
-教育背景
-纽约大学库兰数学学院 纽约市
-计算机科学和数学联合专业学士学位 2018年5月毕业
-技能
-编程语言：Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
-框架/工具：Git、Jenkins、Docker、CI/CD、微服务、JUnit、Angular、ReactJS
-AWS技能：Code Commit | Build | Deploy | Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognito等
-方法论：EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
-语言能力：英语、普通话、粤语
-工作经验
-亚马逊云服务(AWS) 纽约|大中华区|香港
-云应用架构师 2022年4月至今（3个月）
-应用开发顾问 2020年10月至2022年4月（1年7个月）
-助理云开发者 2019年3月至2020年10月（1年8个月）
-•在AWS平台上使用各种AWS服务构建高度可扩展的云原生应用程序
-•领导技术设计和讨论，帮助企业加快对新技术和最佳实践的采用速度
-•为客户和合作伙伴提供AWS最佳实践建议，帮助他们取得成功
-•与BD和SA等跨职能团队合作，为全球客户提供应用架构专业知识
-巴克莱投资银行 纽约
-软件工程师 2018年7月至2019年3月（9个月）
-•在AppDynamics内构建和维护Barclaycard应用程序仪表板、模板和功能
-•为巴克莱卡和支付平台基础设施改进监控和自动化
-技术暑期分析师 2017年6月至2017年8月（3个月）
-•使用Tableau在Day2 Cube基础设施中构建CCAR市场压力报告(14Q)的部分
-•外推风险数据/指数，并开发风险报告和实现数据可视化
-卡内基梅隆大学 匹兹堡
-研究助理 2016年5月至2019年8月（4个月）
-•实现了BDD数据结构，将运行时间效率提高了60%（Java）
-•优化了算法，将计算和运营成本降低了35%
-•评估了Java在BDD上的表现，并进行了统计严谨的数据分析（Matlab、统计学）
-•对Java性能进行差异测试；为研究报告收集和分析数据
-项目
-安全文件交换云原生(SFXC) 2021年8月至2022年4月
-•在AWS上构建一个云原生、无服务器、高可用的托管文件传输(MFT)应用程序
-•为SFXC应用程序的5个实体实现、测试和部署REST API
-•交付Lambda函数、CI/CD流水线和集成测试，应用程序实现了超过95%的稳定性、耐久性、可靠性、可伸缩性和自动化率。
-2024-09-12 01:01:52.371 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
-2024-09-12 01:01:52.372 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: translated_/private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
-2024-09-12 01:04:43.840 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+2024-09-12 16:27:38.580 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
  Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
@@ -704,7 +520,7 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 01:04:43.844 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+2024-09-12 16:27:38.602 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
 linkedin.com/in/jocelynxiaxiao
@@ -751,54 +567,251 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 01:05:01.454 | INFO     | translator.pdf_translator:translate_pdf:21 - 萧晓 +852-6365-0712
+2024-09-12 16:31:57.664 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
-香港特别行政区
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 16:31:57.681 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 17:02:20.184 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 17:02:20.186 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 17:02:46.321 | INFO     | translator.pdf_translator:translate_pdf:21 - 夏晓 +852-6365-0712
+jocelynxiao23@gmail.com
+香港特别行政区区域
 linkedin.com/in/jocelynxiaxiao
 个人简介
-✓ 有丰富的云应用架构设计经验，曾在云客户工程和专业服务行业工作。精通亚马逊网络服务（AWS）、应用开发、解决方案架构设计、DevOps/编排和流水线、移动化和迁移。
-✓ 在美洲、欧洲中东非洲以及亚太地区拥有超过5年与项目和客户合作的经验。
+✓ 拥有丰富的云计算应用架构经验，在云计算客户工程和专业技术服务行业有着良好的工作历史。擅长使用亚马逊云服务（AWS）、应用开发、解决方案架构设计、DevOps/编排和管道、移动化以及迁移。
+✓ 在AMER、EMEA和APJC地区拥有5年以上的项目及客户经验。
 ✓ 热衷于帮助合作伙伴和客户实现成功。
+
 教育背景
-纽约大学库兰数学研究所 纽约，纽约
-计算机科学和数学联合主修学士学位 2018年毕业
+纽约大学，纽约，纽约
+计算机科学与数学双学位，2018年5月毕业
+
 技能
-编程语言：Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
+编程：Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
 框架/工具：Git、Jenkins、Docker、CI/CD、微服务、JUnit、Angular、ReactJS
-AWS技能：Code Commit | Build | Deploy | Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognito等
-方法论：EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
-语言能力：英语、普通话、粤语
-工作经历
-亚马逊网络服务（AWS）纽约 | 大中华区 | 香港
-云应用架构师 2022年4月至今（3个月以上）
-应用开发顾问 2020年10月至2022年4月（1年7个月）
-初级云开发者 2019年3月至2020年10月（1年8个月）
-• 使用各种AWS服务在AWS平台上构建高度可伸缩的云原生应用
-• 主导技术设计和讨论，帮助企业加速采用新技术和最佳实践
-• 提供AWS最佳实践建议，帮助客户和合作伙伴实现成功
-• 与BD和SA等跨职能团队合作，为全球客户提供应用架构专业知识
+AWS技能：代码提交 | 构建 | 部署 | 管道、CloudFormation、SAM、API网关、EC2、S3、DynamoDB、SNS、SQS、Cognito等。
+方法：EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
+语言：英语、普通话、粤语
+
+工作经验
+亚马逊云服务（AWS）纽约 | GCR | 香港
+云计算应用架构师 2022年4月 - 至今（3+个月）
+应用开发顾问 2020年10月 - 2022年4月（1年7个月）
+云开发助理 2019年3月 - 2020年10月（1年8个月）
+• 在AWS平台上使用各种AWS服务架构和构建高度可扩展的云原生应用
+• 领导技术设计和讨论，帮助企业快速采用新技术和最佳实践
+• 咨询和分享AWS最佳实践，帮助客户和合作伙伴实现成功
+• 与BD和SA等多功能团队合作，为全球客户提供应用架构专业知识
+
 巴克莱投资银行 纽约，纽约
-软件工程师 2018年7月至2019年3月（9个月）
-• 构建和维护巴克莱信用卡应用仪表板、模板和功能，使用AppDynamics
-• 改进巴克莱卡支付平台基础设施的监控和自动化
-技术暑期分析师 2017年6月至2017年8月（3个月）
-• 在Tableau中使用Day2立方体基础设施构建CCAR市场压力报告（14Q）的部分
-• 推断风险数据/指数并开发风险报告，实现数据可视化
-卡内基梅隆大学 匹兹堡，宾夕法尼亚
-研究助理 2016年5月至2019年8月（4个月）
-• 实现了BDD数据结构，将运行时间效率提高了60%（Java）
-• 优化算法，将计算和运营成本降低了35%
-• 对Java性能在BDD上进行了评估，并进行了统计学上严格的数据分析（Matlab，统计学）
-• 在Java性能上进行差异测试；收集和分析研究报告的数据
-项目经历
-安全文件交换云原生应用（SFXC） 2021年8月至2022年4月
-• 在AWS上构建一个云原生、无服务器、高可用的托管文件传输（MFT）应用程序
-• 为SFXC应用程序的5个实体实现、测试和部署REST API
-• 提供了Lambda函数、CI/CD流水线和集成测试，应用程序实现了超过95%的可用性、耐久性、可靠性、伸缩性和自动化。
-2024-09-12 01:05:01.455 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
-2024-09-12 01:05:01.455 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
-2024-09-12 01:05:01.592 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
-2024-09-12 01:05:22.942 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+软件工程师 2018年7月 - 2019年3月（9个月）
+• 在AppDynamics中构建和维护Barclaycard应用仪表板、模板和功能
+• 提高了Barclays Cards and Payments Platform基础设施的监控和自动化
+
+技术夏季分析师 2017年6月 - 2017年8月（3个月）
+• 使用Day2 Cube基础设施在Tableau中构建CCAR市场压力报告（14Q）的部分内容
+• 外推风险数据/指数并开发风险报告，实现数据可视化
+
+卡内基梅隆大学 匹兹堡，宾夕法尼亚州
+研究助理 2016年5月 - 2019年8月（4个月）
+• 实施BDD数据结构，通过Java提高了运行时间效率60%
+• 优化算法，减少计算和运营成本35%
+• 评估Java在BDD上的性能，并进行了严格的统计数据分析和研究（Matlab、统计学）
+• 进行Java性能的微分测试；收集和分析研究报告的数据
+
+项目
+安全文件交换云原生（SFXC）2021年8月 - 2022年4月
+• 在AWS上构建一个云原生、无服务器、高可用的文件传输（MFT）应用
+• 实现、测试和部署SFXC应用5个实体的REST API
+• 提供Lambda函数、CI/CD管道、集成测试，应用达到>95%的可用性、耐久性、可靠性、可扩展性和自动化率
+2024-09-12 17:02:46.324 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
+2024-09-12 17:02:46.324 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 17:02:46.817 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 17:04:47.863 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
  Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
@@ -846,7 +859,7 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 01:05:22.944 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
+2024-09-12 17:04:47.864 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao +852-6365-0712
 jocelynxiao23@gmail.com
 Hong Kong SAR Area
 linkedin.com/in/jocelynxiaxiao
@@ -893,327 +906,58 @@ Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
 • Implemented, tested and deployed REST API for 5 entities of SFXC Application
 • Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
 durability, reliability, scalability, and automation
-2024-09-12 01:05:39.782 | INFO     | translator.pdf_translator:translate_pdf:21 - 萧晓 +852-6365-0712
-jocelynxiao23@gmail.com
-香港特别行政区
-linkedin.com/in/jocelynxiaxiao
-简介
-✓ 有丰富的云应用架构师经验，曾在云客户工程和专业服务行业工作。熟练掌握亚马逊网络服务(AWS)、应用开发、解决方案架构设计、DevOps/编排和流水线、移动化和迁移。
-✓ 在美洲、欧洲中东非洲和亚太地区有超过5年的项目和客户经验。
-✓ 热衷于帮助合作伙伴和客户实现成功。
+2024-09-12 17:05:06.875 | INFO     | translator.pdf_translator:translate_pdf:21 - 姓名：夏晓
+联系电话：+852-6365-0712
+电子邮箱：jocelynxiao23@gmail.com
+地区：香港特别行政区
+领英链接：linkedin.com/in/jocelynxiaxiao
+个人简介
+✓ 具有在云客户工程和专业技术服务行业工作的丰富经验，擅长亚马逊网络服务（AWS）、应用开发、解决方案架构设计、DevOps/编排和管道、动员和迁移。
+✓ 在美洲、欧洲、中东和非洲以及亚太地区拥有5年以上的项目与客户经验。
+✓ 热衷于帮助合作伙伴和客户取得成功。
+
 教育背景
-纽约大学，库朗数学研究所 纽约，纽约州
-计算机科学和数学联合专业学士 2018年5月毕业
+纽约大学，纽约市库朗数学研究所
+计算机科学和数学双学位，2018年5月毕业
+
 技能
-编程: Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
-框架/工具: Git、Jenkins、Docker、CI/CD、微服务、JUnit、Angular、ReactJS
-AWS技能: Code Commit、Build、Deploy、Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognito等。
-方法论: EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
-语言: 英语、普通话、粤语
+编程：Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
+框架/工具：Git、Jenkins、Docker、CI/CD、微服务、JUnit、Angular、ReactJS
+AWS技能：代码提交 | 构建 | 部署 | 管道、CloudFormation、SAM、API网关、EC2、S3、DynamoDB、SNS、SQS、Cognito等。
+方法论：EDF、LRP、敏捷、Scrum、MSaaS、OOD、OOP、测试驱动开发
+语言：英语、普通话、粤语
+
 工作经验
-亚马逊网络服务（AWS）纽约 | 大中华区 | 香港
-云应用架构师 2022年4月至今（3个月+）
+亚马逊网络服务（AWS）纽约 | GCR | 香港
+云应用架构师 2022年4月 - 至今（3个月以上）
 应用开发顾问 2020年10月 - 2022年4月（1年7个月）
-助理云开发人员 2019年3月-2020年10月（1年8个月）
-• 在AWS平台上使用各种AWS服务构建高度可扩展的云原生应用程序
-• 领导技术设计和讨论，帮助企业加快新技术和最佳实践的采纳速度
-• 提供AWS最佳实践建议，帮助客户和合作伙伴取得成功
-• 与BD和SA等跨功能团队合作，为全球客户提供应用架构专业知识
-巴克莱投资银行 纽约，纽约州
+云开发工程师 2019年3月 - 2020年10月（1年8个月）
+• 在AWS平台上使用各种AWS服务架构和构建高度可扩展的云原生应用
+• 领导技术设计和讨论，帮助企业加速新技术和最佳实践的采用
+• 向客户和合作伙伴提供AWS最佳实践建议，帮助他们取得成功
+• 与跨职能团队（如BD和SA）合作，为全球客户提供应用架构专业知识
+
+巴克莱投资银行 纽约，纽约
 软件工程师 2018年7月 - 2019年3月（9个月）
-• 在AppDynamics内构建和维护巴克莱信用卡应用程序仪表板、模板和功能
-• 改进了对巴克莱卡和支付平台基础设施的监控和自动化
-技术暑期分析师 2017年6月 - 2017年8月（3个月）
-• 在Tableau中构建了CCAR市场压力报告（14Q）的部分使用Day2 Cube基础设施
+• 在AppDynamics中构建和维护巴克莱卡应用仪表板、模板和功能
+• 改进了巴克莱卡和支付平台基础设施的监控和自动化
+
+技术夏季分析师 2017年6月 - 2017年8月（3个月）
+• 使用Day2 Cube基础设施在Tableau中构建CCAR市场压力报告（14Q）的部分内容
 • 推断风险数据/指数并开发风险报告，实现数据可视化
+
 卡内基梅隆大学 匹兹堡，宾夕法尼亚州
 研究助理 2016年5月 - 2019年8月（4个月）
-• 实施BDD数据结构，将运行时间效率提高了60%（Java）
+• 实施BDD数据结构，通过Java提高了运行时间效率60%
 • 优化算法，降低计算和运营成本35%
-• 对Java性能在BDD上进行评估，并进行统计严谨的数据分析（Matlab，统计学）
-• 对Java性能进行差异测试；收集和分析研究报告的数据
+• 评估Java在BDD上的性能，并进行了严格的数据分析（Matlab、统计学）
+• 对Java性能进行差异测试，收集并分析数据用于研究报告
+
 项目
-安全文件交换云原生(SFXC) 2021年8月 - 2022年4月
-• 在AWS上构建一个云原生、无服务器、高可用的托管文件传输(MFT)应用程序
-• 为SFXC应用的5个实体实施、测试和部署REST API
-• 提供Lambda函数、CI/CD管线和集成测试，应用实现了> 95%的可用性、耐用性、可靠性、可伸缩性和自动化。
-2024-09-12 01:05:39.783 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
-2024-09-12 01:05:39.784 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.markdown
-2024-09-12 01:05:39.784 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.markdown
-2024-09-12 01:19:45.192 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Electronic Filing Instructions for your 2017 Federal Tax Return
-Important: Your taxes are not finished until all required steps are completed.
-Xia Xiao
-73 Lexington Ave, Apt. 2B
-New York, NY 10010
-|
-Balance | Your federal tax return (Form 1040EZ) shows a refund due to you in
-Due/ | the amount of $3,740.00. Your tax refund will be direct deposited
-Refund | into your account. The account information you entered - Account
-| Number: 875090867 Routing Transit Number: 021000021.
-_______________|_______________________________________________________________________
-|
-When Will | The IRS issued more than 9 out of 10 refunds to taxpayers in less
-You Get | than 21 days last year. The same results are expected in 2018. To
-Your | get your estimated refund date from TurboTax, log into My TurboTax at
-Refund? | www.turbotax.com. If you do not receive your refund within 21 days,
-| or the amount you get is not what you expected, contact the Internal
-| Revenue Service directly at 1-800-829-4477. You can also check
-| www.irs.gov and select the "Where's my refund?" link.
-_______________|_______________________________________________________________________
-|
-What You | Your Electronic Filing Instructions (this form)
-Need to | Printed copy of your federal return
-Keep |
-_______________|_______________________________________________________________________
-|
-2017 | Adjusted Gross Income $ 26,023.00
-Federal | Taxable Income $ 15,623.00
-Tax | Total Tax $ 1,878.00
-Return | Total Payments/Credits $ 5,618.00
-Summary | Amount to be Refunded $ 3,740.00
-| Effective Tax Rate 7.22%
-_______________|_______________________________________________________________________
-Page 1 of 1
-2024-09-12 01:19:45.258 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Hi Xia,
-We just want to thank you for using TurboTax this year! It's our goal to make
-your taxes easy and accurate, year after year.
-With TurboTax Federal Free Edition:
-- Your filed return has 100% guaranteed accurate calculations*
-- You received a printed copy of your return with supporting documents for your
-records
-Many happy returns from TurboTax.
-2024-09-12 01:19:52.839 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Xia Xiao 145 81 1118
-73 Lexington Ave 2B
-New York NY 10010
-26,023.
-26,023.
-10,400.
-15,623.
-5,618.
-5,618.
-1,878.
-0.
-1,878.
-3,740.
-0 2 1 0 0 0 0 2 1
-8 7 5 0 9 0 8 6 7
-student (717)609-6818
-Self-Prepared
-BAA REV 01/09/18 TTO
-2024-09-12 01:19:52.841 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Electronic Filing Instructions for your 2017 Federal Tax Return
-Important: Your taxes are not finished until all required steps are completed.
-Xia Xiao
-73 Lexington Ave, Apt. 2B
-New York, NY 10010
-|
-Balance | Your federal tax return (Form 1040EZ) shows a refund due to you in
-Due/ | the amount of $3,740.00. Your tax refund will be direct deposited
-Refund | into your account. The account information you entered - Account
-| Number: 875090867 Routing Transit Number: 021000021.
-_______________|_______________________________________________________________________
-|
-When Will | The IRS issued more than 9 out of 10 refunds to taxpayers in less
-You Get | than 21 days last year. The same results are expected in 2018. To
-Your | get your estimated refund date from TurboTax, log into My TurboTax at
-Refund? | www.turbotax.com. If you do not receive your refund within 21 days,
-| or the amount you get is not what you expected, contact the Internal
-| Revenue Service directly at 1-800-829-4477. You can also check
-| www.irs.gov and select the "Where's my refund?" link.
-_______________|_______________________________________________________________________
-|
-What You | Your Electronic Filing Instructions (this form)
-Need to | Printed copy of your federal return
-Keep |
-_______________|_______________________________________________________________________
-|
-2017 | Adjusted Gross Income $ 26,023.00
-Federal | Taxable Income $ 15,623.00
-Tax | Total Tax $ 1,878.00
-Return | Total Payments/Credits $ 5,618.00
-Summary | Amount to be Refunded $ 3,740.00
-| Effective Tax Rate 7.22%
-_______________|_______________________________________________________________________
-Page 1 of 1
-2024-09-12 01:20:02.086 | INFO     | translator.pdf_translator:translate_pdf:21 - 2017联邦税务申报的电子申报说明
-重要提示：直到完成所有必要步骤为止，您的税款才算完成。
-萧晓
-纽约市列克星敦大街73号，2B公寓
-纽约，纽约州10010
-余额 | 您的联邦税务申报表（表格1040EZ）显示您有3740.00美元的退款。您的税款退款将直接存入您的账户。您输入的账户信息为—账户号码：875090867，路由传输号：021000021。
-_______________|_______________________________________________________________________
-|
-何时可以 | 去年，IRS向逾9成纳税人发放了21天之内的退款。今年同样结果预计将发生。要从TurboTax获得您的估算退款日期，请登录TurboTax网站的My TurboTax栏目 www.turbotax.com。如果您在21天内没有收到退款，或者退款金额与您预期不符，请直接联系国内税务局，电话号码为1-800-829-4477。您也可以访问 www.irs.gov 并选择“我的退款在哪里？”链接。
-_______________|_______________________________________________________________________
-|
-您需要 | 您的电子申报说明（本表格）
-保存的 | 联邦退款的打印副本
-资料 | 
-_______________|_______________________________________________________________________
-|
-2017 | 调整后总收入 26,023.00美元
-联邦 | 应税所得 15,623.00美元
-税务 | 总税款 1,878.00美元
-申报 | 总付款/抵充 5,618.00美元
-摘要 | 应退金额 3,740.00美元
-| 有效税率为7.22%
-_______________|_______________________________________________________________________
-第1页，共1页
-2024-09-12 01:20:02.087 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Hi Xia,
-We just want to thank you for using TurboTax this year! It's our goal to make
-your taxes easy and accurate, year after year.
-With TurboTax Federal Free Edition:
-- Your filed return has 100% guaranteed accurate calculations*
-- You received a printed copy of your return with supporting documents for your
-records
-Many happy returns from TurboTax.
-2024-09-12 01:20:04.111 | INFO     | translator.pdf_translator:translate_pdf:21 - 嗨夏，
-
-我们想要感谢您今年使用TurboTax！我们的目标是让您的税收一年又一年地变得简单又准确。
-
-使用TurboTax联邦免费版本：
-- 您提交的申报表有100%的准确计算*
-- 您收到了打印版本的申报表和支持文件，以供您备查
-
-祝您来年节节高升，来自TurboTax。
-2024-09-12 01:20:04.112 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Xia Xiao 145 81 1118
-73 Lexington Ave 2B
-New York NY 10010
-26,023.
-26,023.
-10,400.
-15,623.
-5,618.
-5,618.
-1,878.
-0.
-1,878.
-3,740.
-0 2 1 0 0 0 0 2 1
-8 7 5 0 9 0 8 6 7
-student (717)609-6818
-Self-Prepared
-BAA REV 01/09/18 TTO
-2024-09-12 01:20:08.215 | INFO     | translator.pdf_translator:translate_pdf:21 - 夏晓 145 81 1118
-73列克星敦大道2B
-纽约州纽约市10010
-26,023。
-26,023。
-10,400。
-15,623。
-5,618。
-5,618。
-1,878。
-0。
-1,878。
-3,740。
-0 2 1 0 0 0 0 2 1
-8 7 5 0 9 0 8 6 7
-学生 (717)609-6818
-自行准备
-BAA REV 01/09/18 TTO
-2024-09-12 01:20:08.215 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/7fdb78df670f8f63ba447623cbaadd556b0d0dd8/TaxReturn.pdf
-2024-09-12 01:20:08.216 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/7fdb78df670f8f63ba447623cbaadd556b0d0dd8/TaxReturn.pdf_translated.pdf
-2024-09-12 01:20:08.385 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/7fdb78df670f8f63ba447623cbaadd556b0d0dd8/TaxReturn.pdf_translated.pdf
-2024-09-12 01:29:06.369 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/c3621b464a71ee28584e8111443fdb8fc4622ad2/W2s.pdf
-2024-09-12 01:29:06.370 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/c3621b464a71ee28584e8111443fdb8fc4622ad2/W2s.pdf_translated.pdf
-2024-09-12 01:29:06.618 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/c3621b464a71ee28584e8111443fdb8fc4622ad2/W2s.pdf_translated.pdf
-2024-09-12 01:29:49.523 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
- Electronic Filing Instructions for your 2017 Federal Tax Return
-Important: Your taxes are not finished until all required steps are completed.
-Xia Xiao
-73 Lexington Ave, Apt. 2B
-New York, NY 10010
-|
-Balance | Your federal tax return (Form 1040EZ) shows a refund due to you in
-Due/ | the amount of $3,740.00. Your tax refund will be direct deposited
-Refund | into your account. The account information you entered - Account
-| Number: 875090867 Routing Transit Number: 021000021.
-_______________|_______________________________________________________________________
-|
-When Will | The IRS issued more than 9 out of 10 refunds to taxpayers in less
-You Get | than 21 days last year. The same results are expected in 2018. To
-Your | get your estimated refund date from TurboTax, log into My TurboTax at
-Refund? | www.turbotax.com. If you do not receive your refund within 21 days,
-| or the amount you get is not what you expected, contact the Internal
-| Revenue Service directly at 1-800-829-4477. You can also check
-| www.irs.gov and select the "Where's my refund?" link.
-_______________|_______________________________________________________________________
-|
-What You | Your Electronic Filing Instructions (this form)
-Need to | Printed copy of your federal return
-Keep |
-_______________|_______________________________________________________________________
-|
-2017 | Adjusted Gross Income $ 26,023.00
-Federal | Taxable Income $ 15,623.00
-Tax | Total Tax $ 1,878.00
-Return | Total Payments/Credits $ 5,618.00
-Summary | Amount to be Refunded $ 3,740.00
-| Effective Tax Rate 7.22%
-_______________|_______________________________________________________________________
-Page 1 of 1
-2024-09-12 01:29:49.526 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：Electronic Filing Instructions for your 2017 Federal Tax Return
-Important: Your taxes are not finished until all required steps are completed.
-Xia Xiao
-73 Lexington Ave, Apt. 2B
-New York, NY 10010
-|
-Balance | Your federal tax return (Form 1040EZ) shows a refund due to you in
-Due/ | the amount of $3,740.00. Your tax refund will be direct deposited
-Refund | into your account. The account information you entered - Account
-| Number: 875090867 Routing Transit Number: 021000021.
-_______________|_______________________________________________________________________
-|
-When Will | The IRS issued more than 9 out of 10 refunds to taxpayers in less
-You Get | than 21 days last year. The same results are expected in 2018. To
-Your | get your estimated refund date from TurboTax, log into My TurboTax at
-Refund? | www.turbotax.com. If you do not receive your refund within 21 days,
-| or the amount you get is not what you expected, contact the Internal
-| Revenue Service directly at 1-800-829-4477. You can also check
-| www.irs.gov and select the "Where's my refund?" link.
-_______________|_______________________________________________________________________
-|
-What You | Your Electronic Filing Instructions (this form)
-Need to | Printed copy of your federal return
-Keep |
-_______________|_______________________________________________________________________
-|
-2017 | Adjusted Gross Income $ 26,023.00
-Federal | Taxable Income $ 15,623.00
-Tax | Total Tax $ 1,878.00
-Return | Total Payments/Credits $ 5,618.00
-Summary | Amount to be Refunded $ 3,740.00
-| Effective Tax Rate 7.22%
-_______________|_______________________________________________________________________
-Page 1 of 1
-2024-09-12 01:29:57.757 | INFO     | translator.pdf_translator:translate_pdf:21 - 2017年联邦税收申报的电子申报说明
-重要提示：直到完成所有必要步骤，您的税收才算完成。
-Xia Xiao
-73 Lexington Ave, Apt. 2B
-纽约，NY 10010
-|
-结余 | 您的联邦税表（表格1040EZ）显示您有一笔$3,740.00 的退款。您的税款退款将直接存入您的账户。您输入的账户信息为-账户号码：875090867 路由传输号码：021000021。
-_______________|_______________________________________________________________________
-|
-何时 | 去年，IRS向纳税人发放的超过9成退款不到21天。预计2018年也会出现相同的结果。要获取您的TurboTax估计退款日期，请登录我的TurboTax 网站 www.turbotax.com 。如果您在21天内无法收到退款，或者退款金额与您期望的不同，请直接联系美国国税局：1-800-829-4477。您也可以登录 www.irs.gov 并选择“我的退款在哪？”链接。
-_______________|_______________________________________________________________________
-|
-您需准备 | 您的电子申报说明（本表格）
-的材料 | 联邦纳税申报的打印副本
-|
-_______________|_______________________________________________________________________
-|
-2017 | 校正后的总收入 $ 26,023.00
-联邦 | 应税收入 $ 15,623.00
-税 | 总税额 $ 1,878.00
-申报 | 总支付/抵免额 $ 5,618.00
-概要 | 应退款金额 $ 3,740.00
-| 有效税率 7.22%
-_______________|_______________________________________________________________________
-第1页，共1页
-2024-09-12 01:29:57.759 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/7fdb78df670f8f63ba447623cbaadd556b0d0dd8/TaxReturn.pdf
-2024-09-12 01:29:57.760 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/7fdb78df670f8f63ba447623cbaadd556b0d0dd8/TaxReturn.pdf_translated.pdf
-2024-09-12 01:29:58.055 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/7fdb78df670f8f63ba447623cbaadd556b0d0dd8/TaxReturn.pdf_translated.pdf
+安全文件交换云原生（SFXC）2021年8月 - 2022年4月
+• 在AWS上构建一个云原生、无服务器、高可用的文件传输（MFT）应用
+• 实现并测试了SFXC应用的5个实体的REST API
+• 提供Lambda函数、CI/CD管道、集成测试，应用实现了>95%的可用性、耐用性、可靠性、可扩展性和自动化率
+2024-09-12 17:05:06.876 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
+2024-09-12 17:05:06.877 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.markdown
+2024-09-12 17:05:06.878 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.markdown
