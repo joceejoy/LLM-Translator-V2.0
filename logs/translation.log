@@ -6585,3 +6585,154 @@ PROJETS
 2024-09-12 20:34:21.232 | INFO     | translator.writer:_save_translated_book_pdf:29 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
 2024-09-12 20:34:21.232 | INFO     | translator.writer:_save_translated_book_pdf:30 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
 2024-09-12 20:34:21.353 | INFO     | translator.writer:_save_translated_book_pdf:77 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.pdf
+2024-09-12 20:42:20.901 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation
+2024-09-12 20:42:20.903 | DEBUG    | translator.pdf_translator:translate_pdf:19 - Translate intoJapanese：Xia Xiao +852-6365-0712
+jocelynxiao23@gmail.com
+Hong Kong SAR Area
+linkedin.com/in/jocelynxiaxiao
+SUMMARY
+✓ Experienced Cloud Application Architect with a demonstrated history of working in Cloud Customer Engineering and
+Professional Services industry. Skilled in Amazon Web Services (AWS), Application Development, Solution Architecture Design,
+DevOps/Orchestration and Pipelines, Mobilize and Migration.
+✓ 5+ years of experience with projects and customers in AMER, EMEA and APJC regions.
+✓ Enthusiastic to enable partners and help customers to achieve their success.
+EDUCATION
+New York University, Courant Institute of Mathematics New York, NY
+Bachelor in Joint Major in Computer Science and Mathematics M ay 201 8 gradua ted
+SKILLS
+Programming: Java, JavaScript, Python, TypeScript, React.js, Node.js, JSON, YAML, SQL, HTML/CSS, Swift, Linux/Unix
+Frameworks/Tools: Git, Jenkins, Docker, CI/CD, Microservices, JUnit, Angular, ReactJS
+AWS Skills: Code Commit | Build | Deploy | Pipeline, CloudFormation, SAM, API GW, EC2, S3, DynamoDB, SNS, SQS, Cognito etc.
+Methodologies: EDF, LRP, Agile, Scrum, MSaaS, OOD, OOP, Test-driven Development
+Language: English, Mandarin Chinese, Cantonese
+WORK EXPERIENCE
+Amazon Web Services (AWS) New York | GCR | HK
+Cloud Application Architect Apr 2022 - Present (3+ months)
+Application Development Consultant Oct 2020 - Apr 2022 (1 year 7 months)
+Associate Cloud Developer Mar 2019- Oct 2020 (1 year 8 months)
+• Architect and build highly scalable, cloud-native applications on the AWS platform using various AWS Services
+• Lead technical designs and discussions to help enterprises speed adoption to new technologies and best practices
+• Advise and share AWS best practices to help customer and partners to achieve success
+• Collaborates with cross-functional teams like BD and SA to offer global customers application architecture expertise
+Barclays Investment Bank New York, NY
+Software Engineer July 2018 - Mar 2019 (9 months)
+• Built and maintained Barclaycard application dashboard, templates and functionality within AppDynamics
+• Improved the monitoring and automation for Barclays Cards and Payments Platform Infrastructure
+Technology Summer Analyst June 2017 - Aug 2017 (3 months)
+• Constructed portions of the CCAR Market Stress Report (14Q) in Tableau using the Day2 Cube infrastructure
+• Extrapolated risk data/indexes and developed risk reporting and achieved data visualizations
+Carnegie Mellon University Pittsburgh, PA
+Research Assistant May 2016 - Aug 2019 (4 months)
+• Implemented BDD data structure and improved the running time efficiency by 60% (Java)
+• Optimized the algorithm and reduced computational and operating costs by 35%
+• Evaluated Java Performance on BDD and conducted statistically rigorous data analysis (Matlab, Statistics)
+• Conducted Differential Testing on Java Performance; collected and analyzed data for research reports
+PROJECTS
+Secured File Exchange Cloud Native (SFXC) Aug 2021 - Apr 2022
+• Build a cloud native, server-less, highly available Managed File Transfer (MFT) application on AWS
+• Implemented, tested and deployed REST API for 5 entities of SFXC Application
+• Delivered Lambda functions, CI/CD pipeline, and Integration Tests and the application achieved > 95% rate of uptime,
+durability, reliability, scalability, and automation, do not add any other symbol and content that's not from original text
+2024-09-12 20:42:27.493 | INFO     | translator.pdf_translator:translate_pdf:21 - ## 夏 小  +852-6365-0712
+jocelynxiao23@gmail.com
+香港特別行政区
+linkedin.com/in/jocelynxiaxiao
+
+**概要**
+✓ クラウドアプリケーションアーキテクトとして、クラウドカスタマーエンジニアリングおよびプロフェッショナルサービス業界で実績があります。Amazon Web Services (AWS)、アプリケーション開発、ソリューションアーキテクチャ設計、DevOps/オーケストレーションとパイプライン、モビライズと移行に精通しています。
+✓ AMER、EMEA、APJC地域のお客様とプロジェクトで5年以上の実績があります。
+✓ パートナーを支援し、お客様の成功を支援することに熱心です。
+
+**学歴**
+ニューヨーク大学、コートラント数学研究所、ニューヨーク州ニューヨーク
+コンピュータサイエンスと数学の複合専攻、学士号 2018年5月卒業
+
+**スキル**
+プログラミング: Java、JavaScript、Python、TypeScript、React.js、Node.js、JSON、YAML、SQL、HTML/CSS、Swift、Linux/Unix
+フレームワーク/ツール: Git、Jenkins、Docker、CI/CD、マイクロサービス、JUnit、Angular、ReactJS
+AWSスキル: Code Commit | Build | Deploy | Pipeline、CloudFormation、SAM、API GW、EC2、S3、DynamoDB、SNS、SQS、Cognitoなど
+方法論: EDF、LRP、アジャイル、スクラム、MSaaS、OOD、OOP、テスト駆動開発
+言語: 英語、中国語（北京語）、広東語
+
+**職務経歴**
+Amazon Web Services (AWS) ニューヨーク | GCR | 香港
+クラウドアプリケーションアーキテクト 2022年4月 - 現在 (3か月以上)
+アプリケーション開発コンサルタント 2020年10月 - 2022年4月 (1年7か月)
+アソシエイトクラウド開発者 2019年3月 - 2020年10月 (1年8か月)
+• 様々なAWSサービスを使用して、AWSプラットフォーム上で高度にスケーラブルなクラウドネイティブアプリケーションを設計および構築
+• 企業が新しいテクノロジーとベストプラクティスを迅速に採用できるように、技術設計と議論をリード
+• お客様とパートナーが成功を収められるよう、AWSのベストプラクティスをアドバイスし共有
+• グローバルなお客様にアプリケーションアーキテクチャの専門知識を提供するために、BDやSAなどのクロスファンクショナルチームと連携
+
+バークレイズ投資銀行 ニューヨーク州ニューヨーク
+ソフトウェアエンジニア 2018年7月 - 2019年3月 (9か月)
+• AppDynamics内でBarclaycardアプリケーションのダッシュボード、テンプレート、機能を構築および維持
+• バークレイズカードとペイメントプラットフォームインフラストラクチャの監視と自動化を改善
+
+テクノロジーサマースタッフ 2017年6月 - 2017年8月 (3か月)
+• Day2 Cubeインフラストラクチャを使用してTableauでCCAR市場ストレスレポート（14Q）の一部を構築
+• リスクデータ/インデックスを推定し、リスクレポートを作成し、データの視覚化を実現
+
+カーネギーメロン大学 ピッツバーグ州ペンシルベニア
+リサーチアシスタント 2016年5月 - 2019年8月 (4か月)
+• BDDデータ構造を実装し、実行時間の効率を60％向上（Java）
+• アルゴリズムを最適化し、計算コストと運用コストを35％削減
+• BDDにおけるJavaのパフォーマンスを評価し、統計的に厳密なデータ分析を実施（Matlab、統計）
+• Javaのパフォーマンスに関する差分テストを実施し、調査レポートのためにデータを収集および分析
+
+**プロジェクト**
+セキュアファイル交換クラウドネイティブ（SFXC） 2021年8月 - 2022年4月
+• AWS上でクラウドネイティブ、サーバーレス、高可用性のマネージドファイル転送（MFT）アプリケーションを構築
+• SFXCアプリケーションの5つのエンティティのREST APIを実装、テスト、デプロイ
+• Lambda関数、CI/CDパイプライン、統合テストを提供し、アプリケーションは95％以上のアップタイム、耐久性、信頼性、スケーラビリティ、自動化を実現し、他のシンボルや元のテキストにないコンテンツを追加しないでください。
+
+2024-09-12 20:42:27.493 | INFO     | translator.writer:_save_translated_book_markdown:83 - pdf_file_path: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf
+2024-09-12 20:42:27.494 | INFO     | translator.writer:_save_translated_book_markdown:84 - 开始翻译: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.markdown
+2024-09-12 20:42:27.495 | INFO     | translator.writer:_save_translated_book_markdown:108 - 翻译完成: /private/var/folders/x3/3sbpl9512sg1b834vgvnhrgc0000gn/T/gradio/feb331710889cbdd3ca7fb6464827e58c80f7774/Xia Xiao-Resume.pdf_translated.markdown

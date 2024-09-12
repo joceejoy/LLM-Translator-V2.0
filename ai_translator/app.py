@@ -39,8 +39,21 @@ def translate_file(file, model_type, format,language,page_num):
     return output_file_path
 
 def launch_gradio():
-    with gr.Blocks() as demo:
-        gr.Markdown(f'''# LLM Translator V2.0''')
+    with gr.Blocks(theme='ParityError/Anime') as demo:
+        gr.Markdown(f'''# LLM Translator V2.0
+                    ### In the current landscape, there's a lack of non-commercial yet efficient PDF translation tools. 
+                    ### Many users have PDF documents with sensitive data that they prefer not to upload to public commercial service websites due to privacy concerns.
+                    ### This project was developed to address this gap, providing a solution for users who need to translate their PDFs while maintaining data privacy.
+
+                    ## Features
+                    - [x]  Translation of English PDF books to Chinese, Traditional Chinese, Japensese, Spanish and French using LLMs.
+                    - [x]  Support for [Gemini](https://deepmind.google/technologies/gemini/flash/) [OpenAI](https://platform.openai.com/docs/models)[ChatGLM](https://github.com/THUDM/ChatGLM-6B)LLMmodels.
+                    - [x]  Flexible configuration through a YAML file or command-line arguments.
+                    - [x]  Timeouts and error handling for robust translation operations.
+                    - [x]  Modular and object-oriented design for easy customization and extension.
+                    - [x]  Implement a graphical user interface (GUI) in [Gradio](https://www.gradio.app/) for easier use.
+                    - [x]  Add support for other languages and translation directions.
+                    ''')
         with gr.Row():
             file_input = gr.File(label="Upload PDF")
             file_output = gr.File(label="Download Translated File")
@@ -60,7 +73,7 @@ def launch_gradio():
     demo.launch()
 
 if __name__ == "__main__":
-
+    # Get the API Keys from environment variables
     api_keys = {
         "gemini-1.5-flash": os.getenv("GEMINI_API_KEY"),
         "gpt-3.5-turbo": os.getenv("OPENAI_API_KEY"),

@@ -12,15 +12,19 @@ LLM-Translator V2.0, improved based on the V1.0 at https://github.com/DjangoPeng
 
 ## Introduction
 
-OpenAI Translator is an AI-powered translation tool designed to translate English PDF books to Chinese. The tool leverages large language models (LLMs) like ChatGLM and OpenAI's GPT-3 and GPT-3.5 Turbo for translation. It's built in Python and has a flexible, modular, and object-oriented design. 
+LLM Translator is an AI-powered translation tool designed to translate English PDF books to Chinese. The tool leverages large language models (LLMs) like Gemini 1.5 Flash, ChatGLM and OpenAI's GPT-3.5 Turbo for translation. It's built in Python and has a flexible, modular, and object-oriented design. 
 
 ## Why this project
 
 In the current landscape, there's a lack of non-commercial yet efficient PDF translation tools. Many users have PDF documents with sensitive data that they prefer not to upload to public commercial service websites due to privacy concerns. This project was developed to address this gap, providing a solution for users who need to translate their PDFs while maintaining data privacy.
 
+## User Interface
+
+![User_Interface](images/ui.png)
+
 ### Sample Results
 
-The OpenAI Translator is still in its early stages of development, and I'm actively working on adding more features and improving its performance. We appreciate any feedback or contributions!
+The LLM Translator is still in its early stages of development, and I'm actively working on adding more features and improving its performance. We appreciate any feedback or contributions!
 
 ![The_Old_Man_of_the_Sea](images/sample_image_0.png)
 
@@ -30,32 +34,28 @@ The OpenAI Translator is still in its early stages of development, and I'm activ
 
 ## Features
 
-- [X] Translation of English PDF books to Chinese using LLMs.
-- [X] Support for both [ChatGLM](https://github.com/THUDM/ChatGLM-6B) and [OpenAI](https://platform.openai.com/docs/models) models.
-- [X] Flexible configuration through a YAML file or command-line arguments.
-- [X] Timeouts and error handling for robust translation operations.
-- [X] Modular and object-oriented design for easy customization and extension.
-- [ ] Implement a graphical user interface (GUI) for easier use.
-- [ ] Add support for batch processing of multiple PDF files.
-- [ ] Create a web service or API to enable usage in web applications.
-- [ ] Add support for other languages and translation directions.
-- [ ] Add support for preserving the original layout and formatting of the source PDF.
-- [ ] Improve translation quality by using custom-trained translation models.
 
+- [X]  Translation of English PDF books to Chinese, Traditional Chinese, Japensese, Spanish and French using LLMs.
+- [X]  Support for [Gemini](https://deepmind.google/technologies/gemini/flash/),[OpenAI](https://platform.openai.com/docs/models) and [ChatGLM](https://github.com/THUDM/ChatGLM-6B) LLM models.
+- [X]  Flexible configuration through a YAML file or command-line arguments.
+- [X]  Timeouts and error handling for robust translation operations.
+- [X]  Modular and object-oriented design for easy customization and extension.
+- [X]  Implement a graphical user interface (GUI) in [Gradio](https://www.gradio.app/) for easier use.
+- [X]  Add support for other languages and translation directions.
 
 ## Getting Started
 
 ### Environment Setup
 
-1.Clone the repository `git clone git@github.com:DjangoPeng/openai-translator.git`.
+1.Clone the repository `git clone git@github.com:joceejoy/LLM-Translator-V2.0.git`.
 
-2.The `OpenAI-Translator` requires Python 3.6 or later. Install the dependencies with `pip install -r requirements.txt`.
+2.The `LLM-Translator` requires Python 3.6 or later. Install the dependencies with `pip install -r requirements.txt`.
 
-3.Set up your OpenAI API key(`$OPENAI_API_KEY`) or ChatGLM Model URL(`$GLM_MODEL_URL`). You can either add it to your environment variables or specify it in the config.yaml file.
+3.Set up your OpenAI API key(`$OPENAI_API_KEY`), ChatGLM API key (`$GLM_API_KEY`) and Gemini API Key(`$GEMINI_API_KEY`) You can add it to your environment variables.
 
 ### Usage
 
-You can use OpenAI-Translator either by specifying a configuration file or by providing command-line arguments.
+You can use LLM-Translator either by specifying a configuration file or by providing command-line arguments.
 
 #### Using a configuration file:
 
@@ -67,18 +67,22 @@ OpenAIModel:
   api_key: "your_openai_api_key"
 
 GLMModel:
-  model_url: "your_chatglm_model_url"
-  timeout: 300
+  model: "glm-4-flash"
+  api_key: "your_glm_api_key"
+
+ GeminiModel:
+  model: "gemini-1.5-flash"
+  api_key: "your_gemini_api_key" 
 
 common:
-  book: "test/test.pdf"
+  book: "tests/test.pdf"
   file_format: "markdown"
 ```
 
 Then run the tool:
 
 ```bash
-python ai_translator/main.py
+python ai_translator/app.py
 ```
 
 ![sample_out](images/sample_image_1.png)
@@ -90,15 +94,9 @@ You can also specify the settings directly on the command line. Here's an exampl
 ```bash
 # Set your api_key as an env variable
 export OPENAI_API_KEY="sk-xxx"
-python ai_translator/main.py --model_type OpenAIModel --openai_api_key $OPENAI_API_KEY --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo
-```
-
-And an example of how to use the GLM model:
-
-```bash
-# Set your GLM Model URL as an env variable
-export GLM_MODEL_URL="http://xxx:xx"
-python ai_translator/main.py --model_type GLMModel --glm_model_url $GLM_MODEL_URL --book tests/test.pdf
+export GEMINI_API_KEY="xxx"
+export GLM_API_KEY="xxx"
+python ai_translator/app.py
 ```
 
 ## License
