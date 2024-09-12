@@ -4,6 +4,7 @@ import os
 
 from model.openai_model import OpenAIModel
 from model.glm_model import GLMModel
+from model.gemini_model import GeminiModel
 from utils.config_loader import ConfigLoader
 from utils.argument_parser import ArgumentParser
 from translator.pdf_translator import PDFTranslator
@@ -12,7 +13,9 @@ from translator.pdf_translator import PDFTranslator
 def translate_file(file, model_type, format,language,page_num):
 
     # Initialize the model with API key
-    if model_type == 'gpt-3.5-turbo':
+    if model_type == 'gemini-1.5-flash':
+        model = GeminiModel(model=model_type, api_key=api_keys.get(model_type))
+    elif model_type == 'gpt-3.5-turbo':
         model = OpenAIModel(model=model_type, api_key=api_keys.get(model_type))
     elif model_type =='glm-4-flash':
         model = GLMModel(model=model_type, api_key=api_keys.get(model_type))
@@ -44,7 +47,7 @@ def launch_gradio():
 
         with gr.Row():
             with gr.Column(scale=1):
-                model_type=gr.Radio(["gpt-3.5-turbo", "glm-4-flash"], label="Choose LLM Model")
+                model_type=gr.Radio(["gemini-1.5-flash", "gpt-3.5-turbo", "glm-4-flash"], label="Choose LLM Model")
                 format=gr.Radio(["pdf", "markdown"], label="Choose Output Format")
                 language=gr.Radio(["中文"], label="Choose Target Language")
                 page_num=gr.Number(label="Number of Pages (optional)", value=1)
@@ -57,19 +60,11 @@ def launch_gradio():
     demo.launch()
 
 if __name__ == "__main__":
-    # argument_parser = ArgumentParser()
-    # args = argument_parser.parse_arguments()
-    # config_loader = ConfigLoader(args.config)
-
-    # config = config_loader.load_config()
-
 
     api_keys = {
+        "gemini-1.5-flash": os.getenv("GEMINI_API_KEY"),
         "gpt-3.5-turbo": os.getenv("OPENAI_API_KEY"),
         "glm-4-flash": os.getenv("GLM_API_KEY")
     }
 
-    # model_name = args.openai_model if args.openai_model else config['OpenAIModel']['model']
-    # api_key = args.openai_api_key if args.openai_api_key else config['OpenAIModel']['api_key']
-    # model = OpenAIModel(model=model_name, api_key=api_key)
     launch_gradio()
