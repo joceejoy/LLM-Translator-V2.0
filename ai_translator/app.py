@@ -49,7 +49,7 @@ def launch_gradio():
             with gr.Column(scale=1):
                 model_type=gr.Radio(["gemini-1.5-flash", "gpt-3.5-turbo", "glm-4-flash"], label="Choose LLM Model")
                 format=gr.Radio(["pdf", "markdown"], label="Choose Output Format")
-                language=gr.Radio(["中文"], label="Choose Target Language")
+                language=gr.Radio(["Simplified Chinese", "Traditional Chinese", "Japanese", "Spanish", "French"], label="Choose Target Language")
                 page_num=gr.Number(label="Number of Pages (optional)", value=1)
                 button = gr.Button("Click to translate PDF")
                 button.click(
